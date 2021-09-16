@@ -71,6 +71,11 @@ function main() {
     new Shader(gl.FRAGMENT_SHADER, require('./shaders/lambert-frag.glsl')),
   ]);
 
+  const custom = new ShaderProgram([
+    new Shader(gl.VERTEX_SHADER, require('./shaders/custom-vert.glsl')),
+    new Shader(gl.FRAGMENT_SHADER, require('./shaders/custom-frag.glsl')),
+  ]);
+
   // This function will be called every frame
   function tick() {
     camera.update();
@@ -87,7 +92,9 @@ function main() {
                                     (controls.currColor[1] / 255.0), 
                                     (controls.currColor[2] / 255.0), 1);
     time += 0.01;
-    renderer.render(camera, lambert, [
+
+    // renderer.render(camera, lambert, [
+    renderer.render(camera, custom, [
       icosphere,
       // square,
       cube,
