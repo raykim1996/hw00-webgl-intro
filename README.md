@@ -10,9 +10,9 @@
   - Cube class added
   - User can toggle between "Lambert Shader" and "Custom Shader", using corresponding gui button
   - User can change the color of the cube in Lamber Shader mode, using currColor color palette
-  - <img width="360" height="360" src="img/HW00-LambertShader.png">
-  - <img width="360" height="360" src="img/HW00-CustomShader-01.png">
-  - <img width="360" height="360" src="img/HW00-CustomShader-02.png">
+  - <img height="360" src="img/HW00-LambertShader.png">
+  - <img height="360" src="img/HW00-CustomShader-01.png">
+  - <img height="360" src="img/HW00-CustomShader-02.png">
 - Live Demo Link: https://raykim1996.github.io/hw00-webgl-intro/
 
 ## Objective
